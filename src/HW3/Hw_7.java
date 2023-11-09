@@ -7,20 +7,46 @@ public class Hw_7 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a number from 1 or more");
-        int a = scanner.nextInt();
-        int n = 0;
-
-        while(a < 1){
-            System.out.println("Enter a number from 1 or more");
-            a = scanner.nextInt();
+        System.out.print("Введите номер месяца: ");
+        int month = scanner.nextInt();
+        switch (month){
+            case 1:
+                System.out.println("Январь");
+                break;
+            case 2:
+                System.out.println("Февраль");
+                break;
+            case 3:
+                System.out.println("Март");
+                break;
+            case 4:
+                System.out.println("Апрель");
+                break;
+            case 5:
+                System.out.println("Май");
+                break;
+            case 6:
+                System.out.println("Июнь");
+                break;
+            case 7:
+                System.out.println("Июль");
+                break;
+            case 8:
+                System.out.println("Август");
+                break;
+            case 9:
+                System.out.println("Сентябрь");
+                break;
+            case 10:
+                System.out.println("Октябрь");
+                break;
+            case 11:
+                System.out.println("Ноябрь");
+                break;
+            case 12:
+                System.out.println("Декабрь");
+                break;
         }
-
-        for (int i = 1; i <= a; i++){
-            n = n + i;
-        }
-
-        System.out.println("Sum of all numbers from 1 to " + a + " = " + n);
 
     }
 
